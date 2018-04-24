@@ -1467,10 +1467,6 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 - (void)setFont:(UIFont*)font {
     if (!_isInitializing) _font = font;
 }
-    
-    - (void)setTextColor:(UIColor*)color {
-        if (!_isInitializing) _textColor = color;
-    }
 
 - (void)setForegroundColor:(UIColor*)color {
     if (!_isInitializing) _foregroundColor = color;

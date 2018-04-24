@@ -88,6 +88,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 + (void)setBorderColor:(nonnull UIColor*)color;                     // default is nil
 + (void)setBorderWidth:(CGFloat)width;                              // default is 0
 + (void)setFont:(nonnull UIFont*)font;                              // default is [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]
+    + (void)setTextColor:(nonnull UIColor*)color; 
 + (void)setForegroundColor:(nonnull UIColor*)color;                 // default is [UIColor blackColor], only used for SVProgressHUDStyleCustom
 + (void)setBackgroundColor:(nonnull UIColor*)color;                 // default is [UIColor whiteColor], only used for SVProgressHUDStyleCustom
 + (void)setBackgroundLayerColor:(nonnull UIColor*)color;            // default is [UIColor colorWithWhite:0 alpha:0.5], only used for SVProgressHUDMaskTypeCustom

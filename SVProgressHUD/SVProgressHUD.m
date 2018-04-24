@@ -1270,7 +1270,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         _statusLabel.adjustsFontSizeToFitWidth = YES;
         _statusLabel.textAlignment = NSTextAlignmentCenter;
         _statusLabel.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
-        _statusLabel.numberOfLines = 0;
+        _statusLabel.numberOfLines = 1;
     }
     if(!_statusLabel.superview) {
       [self.hudView.contentView addSubview:_statusLabel];

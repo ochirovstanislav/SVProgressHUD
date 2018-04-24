@@ -390,7 +390,6 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         self.indefiniteAnimatedView.alpha = 0.0f;
         self.ringView.alpha = self.backgroundRingView.alpha = 0.0f;
         
-
         _backgroundColor = [UIColor whiteColor];
         _foregroundColor = [UIColor blackColor];
         _backgroundLayerColor = [UIColor colorWithWhite:0 alpha:0.4];
@@ -1182,7 +1181,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
     } else if(self.defaultStyle == SVProgressHUDStyleDark) {
         return [UIColor whiteColor];
     } else {
-        return self.foregroundColor;
+        return self.textColor;
     }
 }
 
@@ -1468,6 +1467,10 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 - (void)setFont:(UIFont*)font {
     if (!_isInitializing) _font = font;
 }
+    
+    - (void)setTextColor:(UIColor*)color {
+        if (!_isInitializing) _textColor = color;
+    }
 
 - (void)setForegroundColor:(UIColor*)color {
     if (!_isInitializing) _foregroundColor = color;
